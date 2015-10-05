@@ -33,7 +33,7 @@ sudo -v
 # Programming
 
 sudo apt-get install -y openjdk-7-jdk icedtea-6-plugin git subversion python-dev python3
-sudo apt-get install -y vim eclipse eclipse-cdt guake tmux idle-python2.7 idle-python3.4
+sudo apt-get install -y vim idle-python2.7 idle-python3.4
 sudo apt-get install -y python-software-properties software-properties-common
 sudo apt-get install -y python-pip
 sudo -v
