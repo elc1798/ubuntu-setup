@@ -119,7 +119,7 @@ alias l='ls -a | less'
 
 alias tree='tree -q -h -D -F --inodes -C --dirsfirst -p | less'
 alias xclip="xclip -selection c"
-alias getmp3fromyt='youtube-dl -x --audio-format mp3'
+alias getmp3fromyt='youtube-dl -x --audio-format mp3 && /bin/ls *.mp3 | while read line ; do mv $line "`echo $line | cut -d "-" -f 1`.mp3" ; done'
 alias rndstrgen="cat /dev/urandom | env LC_CTYPE=C tr -cd 'a-f0-9' | head -c 32"
 alias qku='sudo apt-get update ; sudo apt-get upgrade -y ; sudo apt-get dist-upgrade'
 alias py='python'
